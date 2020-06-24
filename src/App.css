@@ -35,6 +35,30 @@
     font-size: 20px;
 }
 
+/* ----------------------------------------- TransactionList ----------------------------------------- */
+
+#transactionList{
+    width:500px;
+    position: relative;
+    left: 30%;
+    border-right:5px solid #e74c3c;
+}
+.delete{
+    position: relative;
+    background-color: #e74c3c !important;
+    left:-31%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.list li:hover .delete {
+    opacity: 1;
+  }
+
+.minus span{
+    position: relative;
+    left: 350px;
+}
+
 /* ----------------------------------------- Footer ------------------------------------------------- */
 .footer{
     margin-top: -54px;
