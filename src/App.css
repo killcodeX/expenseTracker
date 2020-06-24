@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap');
+
+.section{
+    min-height: 100vh;
+    background-color: #f2f2f5;
+}
+
+.navbar-brand{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+}
+
+/* ----------------------------------------- IncomeExpense ----------------------------------------- */
+
+/* .box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+} */
+
+.inc-exp{
+    font-size: 30px;
+}
+
+.money-plus{
+    color: #00D1B2;
+    font-size: 20px;
+}
+.money-minus{
+    color: #F14668;
+    font-size: 20px;
+}
+
+/* ----------------------------------------- Footer ------------------------------------------------- */
+.footer{
+    margin-top: -54px;
+    padding: 1rem;
+    background-color: #0A192F;
+    color: #fff !important;
+  }
+  .footer a{
+    color: #fff;
+    margin-left: 5px;
+  }

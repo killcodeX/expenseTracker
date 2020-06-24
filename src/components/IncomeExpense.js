@@ -2,15 +2,17 @@ import React from 'react'
 
 export default function IncomeExpense() {
     return (
-        <div>
-             <div className="inc-exp-container">
-                <div>
-                    <h4>Income</h4>
-                    <p id="money-plus" className="money plus">+$0.00</p>
+        <div className="columns">
+            <div className="column">
+                <div className='box'>
+                    <h4 className='inc-exp has-text-centered'>Income</h4>
+                    <p className="money-plus has-text-centered">+$0.00</p>
                 </div>
-                <div>
-                    <h4>Expense</h4>
-                    <p id="money-minus" className="money minus">-$0.00</p>
+            </div>
+            <div className='column'>
+                <div className='box'>
+                    <h4 className='inc-exp has-text-centered'>Expense</h4>
+                    <p className="money-minus has-text-centered">-$0.00</p>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
+import Header from './layouts/Header';
+import Footer from './layouts/Footer';
 import Balance from './components/Balance';
 import IncomeExpense from './components/IncomeExpense';
 import TransactionList from './components/TransactionList';
@@ -11,10 +12,15 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Balance/>
-      <IncomeExpense/>
-      <TransactionList/>
-      <AddTransaction/>
+      <section className='section'>
+        <div className='container'>
+          <Balance/>
+          <IncomeExpense/>
+          <TransactionList/>
+          <AddTransaction/>
+        </div>
+      </section>
+      <Footer/>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TransactionList() {
     return (
-        <div>
+        <div className='box'>
             <h3>History</h3>
             <ul className="list">
                 <li className="minus">
