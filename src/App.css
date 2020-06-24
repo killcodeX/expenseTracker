@@ -46,7 +46,7 @@
 .delete{
     position: relative;
     background-color: #e74c3c !important;
-    left:-31%;
+    left:-35%;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -54,7 +54,7 @@
     opacity: 1;
   }
 
-.minus span{
+.money-display{
     position: relative;
     left: 350px;
 }

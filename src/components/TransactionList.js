@@ -7,7 +7,7 @@ export default function TransactionList() {
             <div className='box' id='transactionList'>
                 <ul className="list">
                     <li className="minus">
-                        Cash <span className='title is-5'>-$400</span><button className="delete">x</button>
+                        <span className='title is-5'>Cash</span><span className='money-display title is-5'>-$400</span><button className="delete">x</button>
                     </li>
                 </ul>
             </div>
