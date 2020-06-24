@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap');
 
 .section{
-    height: 950px;
     background-color: #f2f2f5;
+    margin-bottom: 100px;
 }
 
 .navbar-brand{
@@ -36,18 +36,25 @@
 }
 
 /* ----------------------------------------- TransactionList ----------------------------------------- */
+/* border-right:5px solid #e74c3c; */
 
 #transactionList{
     width:500px;
     position: relative;
     left: 30%;
-    border-right:5px solid #e74c3c;
     margin-bottom: 50px;
+}
+.minus{
+    border-right:5px solid #e74c3c;
+}
+.plus{
+    border-right:5px solid #22A565;
 }
 .delete{
     position: relative;
     background-color: #e74c3c !important;
-    left:-35%;
+    left:-15%;
+    transform: translateX(-10%);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -55,10 +62,13 @@
     opacity: 1;
   }
 
-.money-display{
-    position: relative;
-    left: 350px;
+.list li{
+    display: flex;
+    justify-content: space-around;
 }
+/* .money-desc{
+    display: ;
+} */
 
 /* ----------------------------------------- AddTransaction ----------------------------------------- */
 
