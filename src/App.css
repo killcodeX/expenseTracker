@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap');
 
 .section{
-    min-height: 100vh;
+    height: 950px;
     background-color: #f2f2f5;
 }
 
@@ -42,6 +42,7 @@
     position: relative;
     left: 30%;
     border-right:5px solid #e74c3c;
+    margin-bottom: 50px;
 }
 .delete{
     position: relative;
@@ -57,6 +58,27 @@
 .money-display{
     position: relative;
     left: 350px;
+}
+
+/* ----------------------------------------- AddTransaction ----------------------------------------- */
+
+#addTransaction{
+    width:500px;
+    position: relative;
+    left: 30%;
+}
+
+.button{
+    position: relative;
+    left: 30%;
+    width: 500px;
+    transition: transform 0.3s ease;
+    box-shadow: 4.5px 4.5px 8px 1px rgba(39,108,218,0.52);
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* ----------------------------------------- Footer ------------------------------------------------- */
