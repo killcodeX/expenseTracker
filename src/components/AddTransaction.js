@@ -1,15 +1,22 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { GlobalContext } from '../context/StateManager';
 
 export default function AddTransaction() {
 
-    const [ Text, setText ] = useState('');
-    const [ Amount, setAmount ] = useState(0);
+    const { addTransaction } = useContext(GlobalContext);
+
+    const [ text, setText ] = useState('');
+    const [ amount, setAmount ] = useState(0);
 
     let acceptValues = (e) => {
         e.preventDefault();
-        console.log('from text',Text)
-        console.log('from amount',Amount)
-        alert('form is submiting',Amount)
+        const newTransaction = {
+            id : Math.floor(Math.random() * 100000),
+            text,
+            amount : +amount
+        }
+
+        addTransaction(newTransaction);
     }
 
     return (
@@ -20,7 +27,7 @@ export default function AddTransaction() {
                     <div class="field">
                         <label class="label">Text</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" value={Text} onChange={e => setText(e.target.value)} placeholder="Enter description..." />
+                            <input class="input" type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter description..." />
                             <span class="icon is-small is-left">
                                 <i class="fas fa-keyboard"></i>
                             </span>
@@ -30,7 +37,7 @@ export default function AddTransaction() {
                         <label class="label">Amount</label>
                         <label class="label">(negative-expense, positive-income)</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" value={Amount} onChange={e => setAmount(e.target.value)} placeholder="Enter amount..." />
+                            <input class="input" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
                             <span class="icon is-small is-left">
                                 <i class="fas fa-dollar-sign"></i>
                             </span>
