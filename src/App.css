@@ -3,7 +3,7 @@
 
 .section{
     background-color: #f2f2f5;
-    margin-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .navbar-brand{
@@ -92,6 +92,7 @@
 }
 
 /* ----------------------------------------- Footer ------------------------------------------------- */
+
 .footer{
     margin-top: -54px;
     padding: 1rem;
@@ -101,4 +102,22 @@
   .footer a{
     color: #fff;
     margin-left: 5px;
+  }
+
+
+  /* ----------------------------------------- Responsive ------------------------------------------------- */
+
+  @media(max-width: 480px){
+    #transactionList{
+        width:310px;
+        left: 5%;
+    }
+    #addTransaction{
+        width:320px;
+        left: 0%;
+    }
+    .button{
+        width:320px;
+        left: 0%;
+    }
   }
