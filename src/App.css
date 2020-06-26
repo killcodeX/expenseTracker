@@ -50,10 +50,16 @@
 .plus{
     border-right:5px solid #22A565;
 }
-.delete{
+
+.box .plus{
     position: relative;
+    padding-bottom:  0px !important;
+    margin: 0px;
+}
+.delete{
+    position: absolute;
     background-color: #e74c3c !important;
-    left:-15%;
+    left:-8%;
     transform: translateX(-10%);
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -64,7 +70,7 @@
 
 .list li{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 /* .money-desc{
     display: ;
